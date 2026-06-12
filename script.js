@@ -118,8 +118,7 @@ function startTyping() {
   const phrases = [
     'fast, accessible interfaces.',
     'performant web experiences.',
-    'beautiful design systems.',
-    'scalable frontend architecture.'
+    'beautiful frontend designs.'
   ];
   let phraseIndex = 0;
   let charIndex = 0;
