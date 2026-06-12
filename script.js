@@ -1,7 +1,3 @@
-/* ============================================================
-   ALEX RIVERA — PORTFOLIO
-   script.js
-   ============================================================ */
 
 /* ---------- DOM Cached Elements ---------- */
 const navbar = document.getElementById('navbar');
