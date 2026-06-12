@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Rivera — Frontend Developer & UI/UX Designer. Building fast, accessible, and beautiful web experiences." />
+  <title>Thoufiq Umar — Frontend Developer</title>
+
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons (lightweight, no framework) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Alex Rivera home">
+        <span class="logo-bracket">&lt;</span>Thoufiq<span class="logo-accent">Umar</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"     class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills"    class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects"  class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#timeline"  class="nav-link" data-section="timeline">Experience</a></li>
+        <li><a href="#contact"   class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <!-- Decorative background grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Profile image -->
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar-ring" aria-hidden="true"></div>
+        <img
+          src="https://api.dicebear.com/9.x/pixel-art/svg?seed=AlexRivera&backgroundColor=1a1a2e"
+          alt="Thoufiq Umar profile picture"
+          class="hero-avatar"
+          loading="lazy"
+          width="160" height="160"
+        />
+        <span class="hero-avatar-badge" aria-label="Available for work">&#x1F7E2; Available</span>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Thoufiq Umar</h1>
+        <div class="hero-title-wrap" aria-live="polite">
+          <span class="hero-title-static">I build&nbsp;</span>
+          <span class="hero-typing" id="typingTarget" aria-label="typing animation"></span>
+          <span class="cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-intro">
+          Crafting pixel-perfect, performant web experiences that delight users and move businesses forward. I turn ideas into living interfaces.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <span class="scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get know me</p>
+        <h2 class="section-title" id="about-heading">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image-frame">
+            <img
+              src="https://api.dicebear.com/9.x/pixel-art/svg?seed=AlexRiveraAbout&backgroundColor=0d1117"
+              alt="Alex Rivera working"
+              class="about-image"
+              loading="lazy"
+              width="400" height="400"
+            />
+            <div class="about-image-overlay" aria-hidden="true"></div>
+          </div>
+          <!-- Stats chips -->
+          <div class="about-stats">
+            <div class="stat-chip reveal-delay-1">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Months Exp.</span>
+            </div>
+            <div class="stat-chip reveal-delay-2">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-chip reveal-delay-3">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-body reveal">
+          <h3 class="about-sub">Who I am</h3>
+          <p class="about-text">
+            I'm a <strong>Frontend Developer & UI/UX Designer</strong> passionate about building interfaces that are both visually stunning and technically solid. I believe good design is invisible — it just works.
+          </p>
+          <p class="about-text">
+            My background blends computer science fundamentals with a genuine love for design application, animation, and accessibility. I've created sample products such as To-Do List, e-commerce, and others.
+          </p>
+
+          <h3 class="about-sub">Career Objective</h3>
+          <p class="about-text">
+            Seeking challenging roles where I can architect scalable frontend systems and push the boundaries of what the web can feel like.
+          </p>
+
+          <div class="about-tags" aria-label="Key attributes">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Creative</span>
+            <span class="tag">UI&UX Designer</span>
+            <span class="tag">Frontend Devolper</span>
+            <span class="tag">Script Writer</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary about-cta">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What I work with</p>
+        <h2 class="section-title" id="skills-heading">Skills & Tools</h2>
+      </div>
+
+      <!-- Skill cards -->
+      <div class="skills-grid">
+
+        <article class="skill-card reveal" data-delay="0">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-file-html"></i></div>
+          <h3 class="skill-card-name">HTML5</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency 95%">
+            <div class="skill-bar-fill" data-pct="95"></div>
+          </div>
+          <span class="skill-pct">95%</span>
+        </article>
+
+        <article class="skill-card reveal" data-delay="1">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-file-css"></i></div>
+          <h3 class="skill-card-name">CSS3 / Sass</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency 92%">
+            <div class="skill-bar-fill" data-pct="90"></div>
+          </div>
+          <span class="skill-pct">90%</span>
+        </article>
+
+        <article class="skill-card reveal" data-delay="2">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-file-js"></i></div>
+          <h3 class="skill-card-name">JavaScript</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency 90%">
+            <div class="skill-bar-fill" data-pct="70"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </article>
+
+        <!--<article class="skill-card reveal" data-delay="3">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-atom"></i></div>
+          <h3 class="skill-card-name">React</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="React proficiency 88%">
+            <div class="skill-bar-fill" data-pct="40"></div>
+          </div>
+          <span class="skill-pct">40%</span>
+        </article>
+
+        <article class="skill-card reveal" data-delay="4">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-triangle"></i></div>
+          <h3 class="skill-card-name">Next.js</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Next.js proficiency 82%">
+            <div class="skill-bar-fill" data-pct="82"></div>
+          </div>
+          <span class="skill-pct">82%</span>
+        </article>-->
+
+        <article class="skill-card reveal" data-delay="5">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-pencil-ruler"></i></div>
+          <h3 class="skill-card-name">UI/UX Design</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX proficiency 85%">
+            <div class="skill-bar-fill" data-pct="85"></div>
+          </div>
+          <span class="skill-pct">85%</span>
+        </article>
+
+        <article class="skill-card reveal" data-delay="6">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-git-branch"></i></div>
+          <h3 class="skill-card-name">Git / GitHub</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency 88%">
+            <div class="skill-bar-fill" data-pct="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </article>
+
+        <!--<article class="skill-card reveal" data-delay="7">
+          <div class="skill-card-icon" aria-hidden="true"><i class="ph ph-cloud"></i></div>
+          <h3 class="skill-card-name">Node / REST APIs</h3>
+          <div class="skill-bar-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Node proficiency 75%">
+            <div class="skill-bar-fill" data-pct="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </article>-->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What I've built</p>
+        <h2 class="section-title" id="projects-heading">Sample Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <!--<article class="project-card reveal" data-delay="0">
+          <div class="project-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+              alt="Dashify analytics dashboard screenshot"
+              class="project-image"
+              loading="lazy"
+              width="600" height="340"
+            />
+            <div class="project-overlay" aria-hidden="true">
+              <span class="project-overlay-icon"><i class="ph ph-eye"></i></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Finance Tracker</h3>
+            <p class="project-desc">A real-time application where you can track your spendings using charts and data visualisation.</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>Tailwind</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Dashify on GitHub"><i class="ph ph-github-logo" aria-hidden="true"></i> GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" aria-label="View Dashify live demo"><i class="ph ph-arrow-square-out" aria-hidden="true"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <-- Project 2 
+        <article class="project-card reveal" data-delay="1">
+          <div class="project-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80"
+              alt="ShopSphere e-commerce storefront"
+              class="project-image"
+              loading="lazy"
+              width="600" height="340"
+            />
+            <div class="project-overlay" aria-hidden="true">
+              <span class="project-overlay-icon"><i class="ph ph-eye"></i></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">e-Commerce</h3>
+            <p class="project-desc">A fully designed e-commerce web application with products, search feature and product management</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>Tailwind</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View ShopSphere on GitHub"><i class="ph ph-github-logo" aria-hidden="true"></i> GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" aria-label="View ShopSphere live demo"><i class="ph ph-arrow-square-out" aria-hidden="true"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <-- Project 3 
+        <article class="project-card reveal" data-delay="2">
+          <div class="project-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80"
+              alt="Moodboard collaborative design tool"
+              class="project-image"
+              loading="lazy"
+              width="600" height="340"
+            />
+            <div class="project-overlay" aria-hidden="true">
+              <span class="project-overlay-icon"><i class="ph ph-eye"></i></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Notes application</h3>
+            <p class="project-desc">A simple notes application inspired from google docs</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>Tailwind</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Moodboard on GitHub"><i class="ph ph-github-logo" aria-hidden="true"></i> GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" aria-label="View Moodboard live demo"><i class="ph ph-arrow-square-out" aria-hidden="true"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>-->
+
+        <!-- Project 4 -->
+        <article class="project-card reveal" data-delay="3">
+          <div class="project-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?w=600&q=80"
+              alt="Velocify task management app"
+              class="project-image"
+              loading="lazy"
+              width="600" height="340"
+            />
+            <div class="project-overlay" aria-hidden="true">
+              <span class="project-overlay-icon"><i class="ph ph-eye"></i></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">To-Do-List</h3>
+            <p class="project-desc">A simple To-Do-List application to manage your day-to-day tasks without forgetting it.</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>Vue 3</li><li>Pinia</li><li>Express</li><li>MongoDB</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Velocify on GitHub"><i class="ph ph-github-logo" aria-hidden="true"></i> GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" aria-label="View Velocify live demo"><i class="ph ph-arrow-square-out" aria-hidden="true"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <section class="section timeline-section" id="timeline" aria-labelledby="timeline-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">My journey</p>
+        <h2 class="section-title" id="timeline-heading">Experience & Education</h2>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- Experience entries 
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-badge">Work</span>
+            <p class="timeline-date"><i class="ph ph-calendar-blank" aria-hidden="true"></i> Jan 2022 — Present</p>
+            <h3 class="timeline-role">Senior Frontend Engineer</h3>
+            <p class="timeline-org">Vercel Inc. · San Francisco, CA</p>
+            <p class="timeline-desc">Led frontend architecture for three product lines, mentored a team of five engineers, reduced bundle size by 42%, and shipped a design system used across all company products.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-badge">Work</span>
+            <p class="timeline-date"><i class="ph ph-calendar-blank" aria-hidden="true"></i> Jun 2019 — Dec 2021</p>
+            <h3 class="timeline-role">Frontend Developer</h3>
+            <p class="timeline-org">Stripe · Remote</p>
+            <p class="timeline-desc">Built and maintained UI components for the Stripe Dashboard. Improved page load performance by 35% through code splitting and lazy loading strategies.</p>
+          </div>
+        </div>-->
+
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-badge">Internship</span>
+            <p class="timeline-date"><i class="ph ph-calendar-blank" aria-hidden="true"></i>2025</p>
+            <h3 class="timeline-role">Frontend Intern</h3>
+            <p class="timeline-org">HTML5, CSS, JS</p>
+            <p class="timeline-desc">Built an e-commerce website with various features and animations</p>
+          </div>
+        </div>
+
+        <!-- Education entries -->
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot timeline-dot--edu" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-badge timeline-badge--edu">Education</span>
+            <p class="timeline-date"><i class="ph ph-calendar-blank" aria-hidden="true"></i> 2023 — 2027</p>
+            <h3 class="timeline-role">B.Tech. Artificial Intelligence and Data Science</h3>
+            <p class="timeline-org">Sardar Raja College of Engineering</p>
+            <p class="timeline-desc">Final Year Student. Focus areas: AI, Data Structures, Data Science and Software Engineering.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2 class="section-title" id="contact-heading">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
+
+          <ul class="contact-details" role="list">
+            <li>
+              <a href="mailto:alex@rivera.dev" class="contact-detail-link">
+                <span class="contact-icon" aria-hidden="true"><i class="ph ph-envelope"></i></span>
+                <span>thoufiqumar222@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-detail-link">
+                <span class="contact-icon" aria-hidden="true"><i class="ph ph-github-logo"></i></span>
+                <span>github.com/Thoufiq-786</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-detail-link">
+                <span class="contact-icon" aria-hidden="true"><i class="ph ph-linkedin-logo"></i></span>
+                <span>linkedin.com/in/thoufiq-umar</span>
+              </a>
+            </li>
+            
+          </ul>
+
+          <!-- Social icons -->
+          <div class="social-icons" aria-label="Social media links">
+            <a href="https://github.com/Thoufiq-786"  target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+            <a href="https://linkedin.com/in/thoufiq-umar-508b08370"  target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form glass reveal" id="contactForm" novalidate aria-label="Send a message">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" autocomplete="name" required minlength="2" />
+            <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" autocomplete="email" required />
+            <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's it about?" required minlength="3" />
+            <span class="form-error" id="subjectError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="5" required minlength="20"></textarea>
+            <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+          </button>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+            <i class="ph ph-check-circle" aria-hidden="true"></i>
+            Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="footerYear"></span> Alex Rivera. Designed &amp; built with <span class="footer-heart" aria-label="love">&#10084;</span> in San Francisco.
+      </p>
+      <div class="footer-social" aria-label="Footer social links">
+        <a href="https://github.com/"   target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="https://twitter.com/"  target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)"><i class="ph ph-x-logo"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
